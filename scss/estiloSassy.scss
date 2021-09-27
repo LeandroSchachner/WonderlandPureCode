@@ -1,0 +1,425 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item a {
+    background: color #5a5e5a;
+    text-decoration: none;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 26px;
+    color: #5a5e5a;
+    font-weight: bold;
+}
+.navLogo {
+    max-width: 100%;
+}
+
+.logo__principal {
+    text-align: center;
+    max-width: 100%;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    
+}
+.logo__principal img {
+    max-width: 100%;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* TEXTOS */
+.textos h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Viaoda Libre', cursive;
+    color:#5a5e5a;
+   
+}
+.textos p {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Satisfy', cursive;
+}
+/* GALERIAS */    
+
+.galeria {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+   
+}
+.galeria img {
+    width: 100%;
+    transition: 0.50s;
+    padding: 10px;
+    
+}
+.galeria img:hover {
+    filter: saturate(180%);
+    -webkit-transform:scale(1);transform:scale(1.1);
+}
+.souvenirs {
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 10px;
+}
+.souvenirs img {
+    max-width: 100%;
+    transition: 0.50s;
+}
+.souvenirs img:hover {
+    filter: saturate(180%);
+    -webkit-transform:scale(1);transform:scale(1.1);
+}
+
+/* NOVEDADES */ 
+
+.titulos {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Viaoda Libre', cursive;
+    color:#5a5e5a;
+    
+}
+.subtitulos {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    font-family: 'Viaoda Libre', cursive;
+    color:#5a5e5a;
+    
+}
+.subtitulos__compras {
+    text-align: center;
+    font-family: 'Viaoda Libre', cursive;
+    color: #FC8A73;
+    font-size: 35px;
+}
+.galeria h3 {
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 30px;
+    color:#5a5e5a; 
+}
+.galeria h4 {
+    font-size: 20px;
+    color:#5a5e5a; 
+}
+.fa-solid {
+    font-size: 106px;
+}
+.novedades {
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.novedades p {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Uchen', serif;
+    color: #FC8A73;    
+}
+.novedades img {
+    max-width: 100%;
+    transition: 0.50s;
+    padding: 5px;
+}
+.novedades img:hover {
+    filter: saturate(180%);
+}
+.novedades img:hover {
+    -webkit-transform:scale(1);transform:scale(1.1);
+}
+.novedades h3 {
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 30px;
+    padding: 5px;
+    color:#5a5e5a;
+}
+
+/* SOCIAL */ 
+
+.social {
+    margin: 50px;
+    
+
+}
+
+.social h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 30px;
+    color:#5a5e5a;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a {
+    margin: 0 30px;
+}
+.links a i {
+    color: #FC8A73;
+    font-size: 3rem;
+    transition: 0.50s;
+}
+.links i:hover {
+    -webkit-transform:scale(1);transform:scale(1.3);
+}
+
+
+
+
+/*PIE DE PAGINA*/ 
+
+.pie {
+    width: 100%;
+    background-image: linear-gradient(to pink, red);
+}
+.pie p {
+    width: 100%;
+    height: 100px;
+    padding: 25px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 26px;
+    color:#5A5E5A;
+    background-image: linear-gradient(to left,#FC8A73,#FFC9AD,#FC8A73);
+}
+
+/* PREGUNTAS FRECUENTES */ 
+
+.pagina__contenedor {
+    text-align: center;
+}
+.pagina__pregunta {
+    margin-top: 50px;
+    font-size: 46px;
+    color: #FFC9AD;
+    font-weight: bold;
+    font-family:'Viaoda Libre', cursive; 
+}
+
+.pagina__respuesta {
+    font-size: 30px;
+    text-indent: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 40%;
+    
+}
+@mixin colores( $color__letra , $tamanio__letra , $color__fondo) {
+    width: 100%;
+    height: 100px;
+    padding: 25px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 26px;
+    color:#5A5E5A;
+    background-color: pink;
+}
+
+/*METODOS DE PAGO Y ENVIO*/ 
+
+
+.formas__envios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+    width: 60%;
+}
+.formas__envios img {
+    width: 100px;
+    height: 100px;
+}
+.lista__pagos {
+    list-style: none;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    margin: 20px auto;
+    gap: 10px;
+}
+.lista__pagos img {
+    max-width: 100%;
+}
+
+/*ETIQUETAS DE CATEGORIAS*/ 
+
+.categorias__lista {
+    display: grid;
+    max-width: 100%;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 50px;
+    padding: 30px 40px;
+    background-image: linear-gradient(to left, #FC8A73, #FFC9AD, #FC8A73); }
+  
+  .categorias__lista li {
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 10px; }
+  
+  .categorias__lista a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 5px 5px;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    transition: .4s;}
+  
+  .categorias__lista a:hover {
+    color: cornsilk; }
+    .footer__contenedor {
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(to pink, red);
+        .footer__item {
+            width: 100%;
+            height: 100px;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Viaoda Libre', cursive;
+            @include colores (#5A5E5A , 16px , pink )
+           
+        }
+    }
+.contacto__form {
+    max-width: 100%;
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+}
+.contacto__form .imail {
+    color: #FC8A73;
+    font-size: 20px;
+    font-family: 'Uchen', serif;
+}
+.boton__subs {
+    background-color: #FFC9AD;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e26565;
+    border-radius: 50px;
+    font-family: 'Uchen', serif;
+    color:#5A5E5A
+}
+.boton__subs:hover {
+    color: #FC8A73;
+}
+.grilla__contenedor {
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"tarjetas"
+                            "envios";
+        .grilla__tarjetas {
+            display: grid;
+            list-style: none;
+            row-gap: 10px;
+            column-gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .grilla__envios {
+            @extend .grilla__tarjetas;
+            grid-area: envios;
+            
+        }
+    }
+@media (max-width: 870px) {
+            .galeria,
+            .novedades,
+            .souvenirs {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 100%;
+            }
+            .formas__envios {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                justify-content: stretch;
+            }
+           
+            .categorias__lista {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr) ;
+                
+            }
+            .categorias__lista a {
+                font-size: 13px;
+        }
+            .lista__pagos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+}
+@media (max-width: 560px) {
+        .galeria,
+        .novedades,
+        .souvenirs {
+            grid-template-columns: 1fr;
+            max-width: 100%;
+        }
+        .formas__envios {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr)
+        }
+        .pie {
+            justify-items: center;
+        }
+        .lista__videos {
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+    }
+
+@media (max-width: 460px) {
+    .categorias__lista  {
+        grid-template-columns: repeat(2, 1fr);
+        
+}
+}
+@media (max-width: 360px) {
+    .categorias__lista  {
+        padding: 0 auto;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+    .galeria img,
+    .novedades img,
+    .souvenirs img {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 100%;
+            }
+    .formas__envios {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+    }
+}
+
