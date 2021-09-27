@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Galeria de Wonderland DIseños">
     <title>Galeria - Wonderland</title>
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../estilo.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,112 +15,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <img src="../img/sombrero.png" alt="sombrero" class="navLogo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="galeria.html">Galeria</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="souvenirs.html">Souvenirs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/kits.html">Kits</a>
-                </li>
-                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas!</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="quienesSomos.html">Quienes somos</a></li>
-                        <li><a class="dropdown-item" href="preguntas.html">Preguntas frecuentes</a></li>
-                    </ul>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-    </header>
     <main>
-        <hr>
-        <div class="categorias">
-            <h2 class="subtitulos">Categorias principales</h2>
-            <ul class="categorias__lista">
-                <li><a href="#">HELP DE BAÑO</a></li>
-                <li><a href="#">COMBOS</a></li>
-                <li><a href="#">KITS ANTIRESACA</a></li>
-                <li><a href="#">PAPELERIA-ETIQUETAS</a></li>
-                <li><a href="#">KITS IMPRIMIBLES</a></li>
-                <li><a href="#">SOUVENIRS-DETALLES</a></li>
-                <li><a href="#">REGALOS</a></li>
-            </ul>
-        </div>  
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <img src="../img/sombrero.png" alt="sombrero" class="navLogo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienesSomos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mas!</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+            <!-- NAVEGACION
+            <nav class="navMain">
+                <img src="../img/sombrero.png" alt="sombrero" class="navLogo">
+                <ul class="navMenu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="quienesSomos.html">Quienes somos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <ul class="navMenu-derecha">
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                </ul>
+            </nav>
+            -->
+        <div class="container">
+            <hr>
+            <h1 class="titulos">Galeria</h1>
+            <article class="fondo">
+                <ul class="galeria">
+                    <li><img src="../img/producto1.jpeg" alt="fotoProducto1"></li>
+                    <li><img src="../img/producto2.jpeg" alt="fotoProducto2"></li> 
+                    <li><img src="../img/producto3.jpeg" alt="fotoProducto3"></li> 
+                    <li><img src="../img/producto4.jpeg" alt="fotoProducto4"></li>     
+                    <li><img src="../img/producto5.jpeg" alt="fotoProducto5"></li>
+                    <li><img src="../img/producto6.jpeg" alt="fotoProducto6"></li> 
+                    <li><img src="../img/producto7.jpeg" alt="fotoProducto7"></li> 
+                    <li><img src="../img/producto8.jpeg" alt="fotoProducto8"></li>
+                    <li><img src="../img/articulo6.jpeg" alt="fotoarticulo6"></li>     
+                    <li><img src="../img/articulo5.jpeg" alt="fotoArticulo5"></li>
+                    <li><img src="../img/articulo4.jpeg" alt="fotoArticulo4"></li>
+                    <li><img src="../img/articulo3.jpeg" alt="fotoArticulo3"></li>
+                </ul>
+            </article>    
+                <hr>
+        </div>
+        <footer class="pie">
+            <p>Wonderland Diseños - Julieta Geist - Leandro Schachner</p>
+        </footer>
     </main>
-    <footer class="pie">
-        <h2 class="subtitulos__compras">Metodos de envio</h2>
-        <div class="formas__envios">
-            
-            <h3>Envio por moto <img src="../img/icon/motoCourier.png" alt="moto"></h3>
-            
-            <h3>Retiro en local <img src="../img/icon/localcolor.png" alt=""></h3>
-            
-            <h3>Envio por transporte <img src="../img/icon/transporte.png" alt=""></h3>
-        </div>
-        
-        <h2 class="subtitulos__compras">Metodos de pago</h2>
-        
-        <div class="metodos__pagos">
-            <ul class="lista__pagos">
-                <li><img src="../img/icon/nativa.png" alt=""></li>
-                <li><img src="../img/icon/naranja.png" alt=""></li>
-                <li><img src="../img/icon/mercadopago-patagonia.png" alt=""></li>
-                <li><img src="../img/icon/mastercard.png" alt=""></li>
-                <li><img src="../img/icon/cabal.png" alt=""></li>
-                <li><img src="../img/icon/argencard.png" alt=""></li>
-                <li><img src="../img/icon/american-express.png" alt=""></li>
-                <li><img src="../img/icon/visa.png" alt=""></li>
-                <li><img src="../img/icon/tarjeta-shopping.png" alt=""></li>
-                <li><img src="../img/icon/mercadopago.png" alt=""></li>
-                <li><img src="../img/icon/cmr-falabella.png" alt=""></li>
-                <li><img src="../img/icon/tarjeta-walmart.png" alt=""></li>
-            </ul>
-        </div>
-        <section class="social">
-            <h2>Seguinos!</h2>
-            <div class="links">
-                <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-            <div class="contacto__form">
-                <form action="#">
-                    <h2>Contactanos y enterate de todo!</h2>
-                    <label class="imail" for="Imail"> Imail</label>
-                    <input class="imail" type="imail">  
-                    <button class="boton__subs"> Subscribirme!</button>
-                </form>
-            </div>
-        </section>
-        <hr>
-        <p>Wonderland Diseños - Julieta Geist - Leandro Schachner</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 </body>
 </html>
